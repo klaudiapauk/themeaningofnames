@@ -1,0 +1,101 @@
+html {
+	font-size: 10px;
+	background: url("background.jpg") top center;
+	background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.text{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	font-size: 3rem;
+	text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.72), 0 0 1.4rem rgba(0, 0, 0, 0.45);
+	padding: 1.5rem;
+	padding-top: 3rem;
+	color: #bada55;
+}
+
+.name{
+	display: inline-block;
+	font-size: 3rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.72), 0 0 1.4rem rgba(0, 0, 0, 0.45);
+	padding: 1.5rem;
+	color: white;
+}
+
+.name:hover{
+	cursor: pointer;
+	color: #bada55;
+	transform: scale(1.1,1.1);
+	transition-duration: 0.5s;
+}
+
+.list{
+	margin-top: 3rem;
+	text-align: center;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.opis{
+	padding:4rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	font-size: 2.5rem;
+	text-align: center;
+	text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.72), 0 0 1.4rem rgba(0, 0, 0, 0.45);;
+	display: none;
+	color:white;
+}
+
+.opis.active{
+	display: block;
+}
+
+.opis > span{
+	font-size: 1.2rem;
+}
+
+.source > a{
+	text-decoration: none;
+	color:white;
+}
+
+/*media for mobile devices */
+@media (max-width: 320px){
+	html {
+		font-size: 4.3px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 480px){
+	html {
+		font-size: 5px;
+	}
+}
+
+/*media for iPads, tablets */
+@media (min-width:481px) and (max-width: 768px){
+	html {
+			font-size: 9px;
+		}
+}
+
+/*media for small screen, laptops */
+@media (min-width:769px) and (max-width: 1024px){
+	html {
+			font-size: 12px;
+		}
+}
+
+/*media for deskops, large screen */
+@media (min-width:1025px){
+}
+
